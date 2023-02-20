@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <button class="menu"></button>
+        <div class="logo_titulo">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <h1 class="titulo">Automatic-Life</h1>
+        </div>
+        <nav class="menu-lateral">
+            <a href="#" class="links links-inicio link--ativo">Inicio</a>
+            <a href="#" class="links links-picos link--ativo">produtos</a>
+            <a href="#" class="links links-picos link--ativo">tutoriais</a>
+            <a href="plantas.html" class="links links-video link--ativo">Inventário de Plantas</a>
+        </nav>
+    </header>
+    <section class="dados">
+        <div class="umidade">
+            <h3 class="texto_umidade">
+                Umidade
+            </h3>
+            <p class="unidade-text">
+                77%
+            </p>
+        </div>
+        <div class="temperatura">
+            <h3 class="texto_temperatura">
+                Temperatura
+            </h3>
+            <p class="temperatura-text">
+                33°C
+            </p>
+        </div>
+    </section>
+
+
+    
+    <div class="previsaotempo">
+        <div id="ww_ae8cf60a98d7a"  class="calendario" v='1.3' loc='id'
+            a='{"t":"horizontal","lang":"pt","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
+            Weather Data Source: <a href="https://sao-paulo.wetter-heute.org/" id="ww_ae8cf60a98d7a_u"
+                target="_blank">sao-paulo.wetter-heute.org/</a></div>
+        <script async src="https://app1.weatherwidget.org/js/?id=ww_ae8cf60a98d7a"></script>
+    </div>  
+
+    <main class="principal">
+        <section class="slider">
+            <h2 class="titulo-sli">Ajustar o nivel da água</h2>
+            <div class="container">
+                <input type="range" id="my-slider" min="0" max="500" value="1"  oninput="slider()">
+                <div id="slider-value">0</div>
+                <input type="number" id="tentacles" name="tentacles" class="number" max="10" min="0">
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+        <script src="javacript.js"></script>
+
+        <section class="botao">
+            <button class="btn">Regar</button>
+        </section>
+    </main>
+</body>
+
+</html>

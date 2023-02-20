@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(219, 219, 219, 0.795);
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: rgba(227, 241, 253, 0.466);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(61, 112, 65);
+}
+
+.logo_titulo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    background: none;
+    color: white;
+    border: none;
+}
+
+
+.links{
+    text-decoration: none;
+    color: #95999C;
+    height: 64px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.links::before{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+
+.menu{
+    background-image: url(img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+
+
+.link--ativo:hover{
+    color: #ffffff;
+    padding-left: 36px;
+    border-left: 8px solid #ffffff;
+    transition: 0.25s;
+}
+
+
+.menu-lateral{
+    top: 5.6em;
+    display: flex;
+    flex-direction: column;
+    background-color: #2d2d2e;
+    width: 60vw;
+    height: 35vh;
+    position: absolute;
+    left: -100vw;
+    transition: 0.25s;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.menu--ativo{
+    left: 0;
+    transition: 0.25s;
+}
+
+
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.card{
+    background-color:  #414141;
+    padding: 1em;
+    text-align: center;
+}
+
+.titulo-samabaia{
+    color: #ffff;
+}
+
+.foto{
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+}
